@@ -1,0 +1,342 @@
+@import url("https://fonts.googleapis.com/css2?family=Rubik:wght@400;500;700&display=swap");
+:root {
+  --PaleViolet: hsl(276, 100%, 81%);
+  --ModerateViolet: hsl(276, 55%, 52%);
+  --DesaturatedDarkViolet: hsl(271, 15%, 43%);
+  --rayishBlue: hsl(206, 6%, 79%);
+  --VeryDarkDesaturatedViolet: hsl(271, 36%, 24%);
+  --DarkGrayishViolet: hsl(270, 7%, 64%);
+  --LightMagenta: hsl(293, 100%, 63%);
+  --LightViolet: hsl(264, 100%, 61%);
+  --white: hsl(0, 0%, 100%);
+  --LightGrayishViolet: hsl(270, 20%, 96%);
+  --VeryLightMagenta: hsl(289, 100%, 72%);
+  --offwhite: hsl(45, 29%, 97%);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  font-size: 16px;
+  font-family: "Rubik", sans-serif;
+}
+
+html {
+  height: 100%;
+}
+
+body {
+  background-color: var(--white);
+  padding: 0;
+  margin: 0;
+  height: 100%;
+}
+
+.container {
+  background-color: var(--offwhite);
+  max-width: 1450px;
+  max-height: 800px;
+  height: 100%;
+  margin: 0 auto;
+}
+
+.device {
+  background-color: var(--offwhite);
+  border: 10px solid var(--white);
+  border-radius: 30px;
+  box-shadow: 5px 5px 30px #d1d1d1;
+  height: 435px;
+  width: 15%;
+  min-width: 200px;
+  top: 15%;
+  left: 21%;
+  position: relative;
+}
+
+.device header {
+  background-color: var(--VeryDarkDesaturatedViolet);
+  background: linear-gradient(
+    to right,
+    var(--VeryDarkDesaturatedViolet),
+    70%,
+    var(--LightViolet)
+  );
+  border-top-left-radius: 20px;
+  border-top-right-radius: 20px;
+  padding: 0px 5px 10px 5px;
+  height: 15%;
+  box-sizing: border-box;
+}
+
+.rightSide {
+  background-color: var(--ModerateViolet);
+  height: 90%;
+  width: 25%;
+  border-bottom-right-radius: 180px;
+  position: fixed;
+  top: 0;
+  left: 0;
+}
+
+.mobile {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.device header .notch {
+  background-color: var(--white);
+  height: 15px;
+  width: 60%;
+  padding: 0;
+  margin: 0 auto;
+  border-bottom-right-radius: 100px;
+  border-bottom-left-radius: 100px;
+  margin-bottom: 10px;
+}
+
+.device header i {
+  cursor: pointer;
+  color: white;
+  vertical-align: middle;
+  font-size: 0.9em;
+  opacity: 0.8;
+}
+
+.device header img {
+  border-radius: 50%;
+  vertical-align: middle;
+  border: 1px solid #ddd;
+  cursor: pointer;
+  height: 30px;
+}
+
+.device header .user {
+  display: inline-block;
+  width: 130px;
+}
+
+.device header .user h6,
+.device header .user p {
+  opacity: 0.75;
+  color: white;
+  display: inline-block;
+  font-size: 0.7em;
+  padding: 0;
+  margin: 0;
+  vertical-align: middle;
+}
+
+.device header .user h6 p {
+  font-weight: 400;
+  color: white;
+  opacity: 0.6;
+}
+
+.device .message-1 {
+  background-color: var(--white);
+  height: 85%;
+  padding: 0 0.5em 0.5em 0.5em;
+  box-sizing: border-box;
+  border-bottom-right-radius: 20px;
+  border-bottom-left-radius: 20px;
+}
+
+.device .message-1 .msg1 {
+  padding-top: 0.05em;
+  clear: both;
+}
+
+.device .message-1 .msg1 li {
+  display: block;
+  font-size: 0.5em;
+  max-width: 70%;
+  padding: 1em;
+  color: var(--ModerateViolet);
+  background: var(--offwhite);
+  border-radius: 10px;
+  margin-top: 0.8em;
+  box-sizing: border-box;
+  clear: both;
+}
+
+.device .message-1 .msg2 {
+  margin-top: 0.4em;
+  text-align: right;
+}
+
+.device .message-1 .msg2 .images img {
+  border-radius: 10px;
+}
+
+.device .message-1 .msg2 .msgr {
+  float: right;
+  text-align: right;
+  display: block;
+  font-size: 0.5em;
+  max-width: 70%;
+  padding: 1em;
+  color: var(--DesaturatedDarkViolet);
+  background: var(--white);
+  border-radius: 10px;
+  margin-top: 0.8em;
+  box-sizing: border-box;
+}
+
+.device .message-1 .prices li {
+  display: block;
+  font-size: 0.5em;
+  max-width: 80%;
+  padding: 1em;
+  background: var(--LightViolet);
+  background: linear-gradient(
+    270deg,
+    var(--LightViolet) 0%,
+    var(--LightMagenta) 100%
+  );
+  border-radius: 10px;
+  margin-top: 0.8em;
+  box-sizing: border-box;
+}
+
+.device .message-1 .prices li .circle {
+  border-radius: 50%;
+  border: 1px solid hsl(289, 100%, 72%);
+  height: 10px;
+  width: 10px;
+  display: inline-block;
+  vertical-align: middle;
+}
+
+.device .message-1 .prices li p {
+  font-size: 1em;
+  display: inline-block;
+  vertical-align: middle;
+  color: white;
+  opacity: 0.7;
+}
+.device .message-1 .prices li span {
+  display: inline-block;
+  vertical-align: middle;
+  color: white;
+  font-size: 1.3em;
+}
+
+.w-80 {
+  width: 75%;
+  display: inline-block;
+  font-size: 1em;
+  vertical-align: middle;
+}
+
+.device .message-1 input {
+  border: none;
+  box-sizing: border-box;
+  padding: 1em;
+  font-size: 0.6em;
+  width: 85%;
+  border-radius: 30px;
+}
+
+::placeholder {
+  color: var(--rayishBlue);
+}
+
+.device .message-1 .msgSend {
+  box-sizing: border-box;
+  display: inline-block;
+  width: 100%;
+  background: white;
+  border-radius: 30px;
+  vertical-align: middle;
+  margin-top: 10px;
+}
+
+.device .message-1 .msgSend button {
+  background: var(--VeryDarkDesaturatedViolet);
+  border-radius: 50%;
+  vertical-align: middle;
+}
+
+.device .message-1 .msgSend button i {
+  color: var(--white);
+  font-size: 1em;
+  vertical-align: middle;
+}
+
+.leftSide {
+  bottom: 40%;
+  right: 17%;
+  position: fixed;
+  width: 35%;
+}
+
+.mainheading {
+  font-weight: 700;
+  font-size: 2em;
+  color: var(--VeryDarkDesaturatedViolet);
+  margin-bottom: 0.5em;
+}
+
+.mainpara {
+  font-weight: 400;
+  font-size: 1em;
+  color: var(--DarkGrayishViolet);
+  line-height: 1.5em;
+}
+
+.leftmodel {
+  background: var(--rayishBlue);
+  /* background: linear-gradient(
+    270deg,
+    var(--LightViolet) 0%,
+    var(--LightMagenta) 100%
+  ); */
+  height: 80%;
+  width: 22%;
+  border-top-left-radius: 180px;
+  position: fixed;
+  bottom: 0;
+  right: 0;
+  opacity: 0.1;
+}
+
+@media only screen and (max-width: 800px) {
+  .leftSide {
+    display: inline-block;
+    position: static;
+    margin-top: 8em;
+    width: 90%;
+    margin: 8em 5%;
+  }
+  .leftSide h2 {
+    text-align: center;
+  }
+
+  .leftSide p {
+    text-align: center;
+  }
+
+  .rightSide {
+    width: 50%;
+    height: 50%;
+  }
+
+  .leftmodel {
+    width: 45%;
+    height: 50%;
+  }
+
+  .device {
+    margin: 0 auto;
+    left: 0;
+  }
+}
+.attribution {
+  font-size: 11px;
+  text-align: center;
+}
+
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
