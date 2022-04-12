@@ -335,8 +335,13 @@ body {
 .attribution {
   font-size: 11px;
   text-align: center;
+  margin-top: 10px;
+  padding: 5px;
+  display: inline-block;
 }
 
 .attribution a {
-  color: hsl(228, 45%, 44%);
+  color: var(--ModerateViolet);
+  text-decoration: solid;
+  font-size: 12px;
 }
